@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/1-8-24">
+    <style>
+        .box2{
+    height: 700px;
+    width: 1450px;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center; 
+    background-image: linear-gradient( rgb(100, 211, 231) 1.33%,white 99.77%);
+}
+.sun{
+    border: 2px solid rgb(246, 136, 11);
+height: 150px;
+width: 150px;
+border-radius: 50%;
+background-color: rgb(246, 113, 12);
+box-shadow: 0px 0px 20px rgb(238, 101, 4);
+margin-left: 639px;
+margin-top: 37px;
+position: relative;
+z-index: 1;
+}
+.box1{
+height: 600px;
+width: 1450px;
+margin-top: 100px;
+position: relative;
+bottom:160px;
+background:url("https://pluspng.com/img-png/png-lake-scene-pin-scenic-clipart-mountain-scene-14-5072.png") no-repeat fixed center;
+background-size: cover;
+z-index: 2;
+}
+#id{
+    background-image:url("https://i.pinimg.com/originals/74/b9/00/74b9009656d3cf6d2334695b692ba0ab.png") ;
+    background-size:cover ;
+    height: 100px;
+    width: 300px;
+    position: relative;
+ animation: bird 10s linear 1s infinite normal ;
+}
+@keyframes bird{
+0%{
+    top:0px;
+    left: 0px;    
+}
+100%
+{
+ top:0px;   
+    left: 1150px;
+
+}
+}
+#boat{
+    height: 100px;
+    width: 186px;
+    position: relative;
+    top: 236px;
+    left: 796px;
+}
+#bo{
+    height: 61px;
+    width: 44px;
+    position: relative;
+    top: 39px;
+    background-image: url(https://www.freeiconspng.com/uploads/sailboat-png-transparent-image-png-24.png);
+    background-size: cover;
+    animation: boat 10s linear 1s infinite alternate;
+}
+@keyframes boat{
+    0%{
+        top:0px;
+        left:0px;
+    }
+    100%{
+        top:0px;
+        left:170px;
+    }
+ 
+}
+#deer{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 180px;
+    left: 210px;
+    background-image: url("https://cdn.pixabay.com/photo/2012/05/07/13/12/deer-48419_960_720.png");
+    background-size: cover;
+}
+#light{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 80px;
+    left: 680px;
+    background-image: url("https://pngimg.com/uploads/lighthouse/lighthouse_PNG17.png");
+    background-size: cover;
+
+}
+    </style>
+</head>
+<body>
+    <div class="box2">
+        <div class="sun"></div>
+        <div class="box1">
+            <div id="id"></div>
+            <div id="boat">
+                <div id="bo"></div>
+            </div>
+            <div id="light"></div>
+            <div id="deer"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
